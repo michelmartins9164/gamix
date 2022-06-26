@@ -16,7 +16,7 @@ export const ContainerHeader = styled.header`
         top: 0;
         right: 335px;
         width: 210px;
-        height:450px;
+        height:100vh;
     }
     `;
 
@@ -26,7 +26,7 @@ export const Background = styled.div`
         overflow: hidden;
         left: 50%;
         top: 50%;
-        transform: translate(-40%, -46%);
+        transform: translate(-40%, -48%);
         position: fixed;
         width: 65%;
     }
@@ -91,7 +91,6 @@ export const MainNavigation = styled.div `
             &:hover {
                 background-color: #441569;
             }
-
         }
         
         a {
@@ -104,4 +103,103 @@ export const MainNavigation = styled.div `
             text-decoration: none;
         }
     }
+`;
+
+export const NavFooter = styled.div `
+    background-color: #1F2324;
+    width: calc(100% - 80%);
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const NavFooterIcons = styled.div `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -30px;
+    box-sizing: border-box;
+    img {
+        margin-left: 30px;
+    }
+`;
+
+export const Footer = styled.footer `
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #c4c4c4;
+`;
+
+export const ContainerBanner = styled.footer `
+    position: fixed;
+    left: 380px;
+    top: 100px;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    column-gap: 60%;
+    justify-content: space-between;
+    
+    @media screen and (min-width: 1500px){
+        column-gap:110%;
+    }
+`;
+
+export const ContainerButtons = styled.div `
+    display: flex;
+    column-gap: 1em;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const CardPrice = styled.div `
+    display: flex;
+    width: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    font-size: 1.4em;
+
+    & p:nth-child(2) {
+        color: #58575B;
+        text-decoration: line-through;
+    }
+    `;
+
+const configButtons = `
+    width: 10.3em;
+    height: 2em;
+    font-size: 1.2em;
+    border: none;
+    color: #fff;
+`;
+
+export const ButtonBuy = styled.button `
+    ${configButtons};  
+    background-color: #4A2169;
+    border-radius: 2px;
+    `;
+
+export const InfoMore = styled.button `
+    ${configButtons};
+    background-color: #090B0C70;
+`; 
+
+export const Hour = styled.h1 `
+    font-size: 2em;
+`;
+
+export const ContainerCardMain = styled.div `
+    position: fixed;
+    top: 23em;
+    left: 24em;
+    color: #000;
+    background-color: #fff;
+    z-index: 2;
 `;
